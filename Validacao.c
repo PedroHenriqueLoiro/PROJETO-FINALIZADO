@@ -43,7 +43,6 @@ int validacao (int dia, int mes, int ano){
 int validaNome(char nome[]){
 	int tam;
 	tam = strlen(nome);
-	//printf("Tamanho: %i\n",tam);
 	if(tam == 0  || tam == 1){
 		return 0;
 	}
@@ -53,8 +52,6 @@ int validaNome(char nome[]){
 		}else if(nome[i] >= 'a' && nome[i] <= 'z'){
 			continue;
 		}else if(nome[i]== ' '){
-			continue;
-		}else if(nome[i] >= ',' && nome [i] <= '.'){
 			continue;
 		}else{
 			return 0;
@@ -73,26 +70,14 @@ float validaPreco(float pre[]){
 
 	for(int i = 0; i<1;i++){
 		if(pre[i] < 0 || pre[i] == 0){
-		printf("/// Invalido                                                  ///\n");
-		printf("/// Tente novamente!                                          ///\n");
 			return 0;
 		}else{
 			for(int i = 0;i < 1;i++){
-			//printf("///             R$ %.2f                                                ///\n", pre[i]);
 			return 1;
 		  }	
 	
 		}
   }
-	return 1;
-}
-
-int valQuant(int quant){
-	if(quant > 0){
-		return 1;
-	}else{
-		return 0;
-	}
 	return 1;
 }
 
@@ -108,32 +93,11 @@ void limpaTela(void){
 }
 
 //
-/// validação de numero ( com ajuda do habby)
-//
-int validaNumero(char num[]){
-	int tam;
-	tam = strlen(num);
-	//printf("Tamanho: %i\n",tam);
-	if(tam == 0  || tam == 1){
-		return 0;
-	}
-	for(int i = 0;i < tam; i++){
-		if(num[i] >= '0'  && num[i] <= '9'){
-			continue;
-		}else{
-			return 0;
-		}
-	}
-	return 1;
-}
-
-//
 /// validação de codigo de barra( com ajuda do habby)
 //
 int validacodBarra(char num[]){
 	int tam;
 	tam = strlen(num);
-	//printf("Tamanho: %i\n",tam);
 	if(tam != 13){
 		return 0;
 	}
@@ -153,7 +117,6 @@ int validacodBarra(char num[]){
 int validaAgencia(char num[]){
 	int tam;
 	tam = strlen(num);
-	//printf("Tamanho: %i\n",tam);
 	if(tam != 4){
 		return 0;
 	}

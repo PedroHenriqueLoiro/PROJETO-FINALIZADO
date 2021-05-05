@@ -4,8 +4,7 @@ struct deposito {
   char cpf[15];
   char numeroBanco[4];
   char agencia[5];
-  char confirmacao[4];
-  char valorDepositado [11];
+  char valorDepositado [20];
 	float preco;
 };	
 
@@ -20,4 +19,6 @@ void gravarDeposito(Deposito* dep);
 void histDeposito(void);
 
 
-
+void exibir(Deposito* Deposito);
+char* telaBuscaDpst(void);
+Deposito* pesquisaCPF(char* nom);

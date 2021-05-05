@@ -15,3 +15,8 @@ Transf* TelacadastrarTransf(void);
 void cadastrarTrans(void);
 void histTransf(void);
 void gravarTransf(Transf* tra);
+
+//histTransf
+void exibirTranf(Transf* Transf);
+Transf* nomeTransf(char* nom);
+char* telaBuscaTransf(void);

@@ -40,9 +40,9 @@ int main(void) {
 	Transf* tra;
 	Saques* saq;
 	dep = (Deposito*)malloc(sizeof(Deposito));
-   	pag = (Pagamento*)malloc(sizeof(Pagamento));
-  	tra = (Transf*)malloc(sizeof(Transf));
-  	saq = (Saques*)malloc(sizeof(Saques));
+  pag = (Pagamento*)malloc(sizeof(Pagamento));
+  tra = (Transf*)malloc(sizeof(Transf));
+  saq = (Saques*)malloc(sizeof(Saques));
 
 	char opcao;
     menuSobre();
@@ -81,15 +81,15 @@ int menuPrincipal(){
 		limpaTela();
 		char op;
 		printf("\n");
-		printf("/////////////////////////////////////////////////////////////////////////////\n");
-		printf("///                                                                       ///\n");
-		printf("///          ===================================================          ///\n");
-		printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
-		printf("///          = = = =           Sistema Bancario          = = = =          ///\n");
-		printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
-		printf("///          ===================================================          ///\n");
-		printf("///                Developed by  @Pedro_.Guedes- Jan, 2021                ///\n");
-		printf("///                                                                       ///\n");
+	  printf("/////////////////////////////////////////////////////////////////////////////\n");
+	  printf("///                                                                       ///\n");
+	  printf("///          ===================================================          ///\n");
+	  printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+	  printf("///          = = = =           Sistema Bancario          = = = =          ///\n");
+	  printf("///          = = = = = = = = = = = = = = = = = = = = = = = = = =          ///\n");
+	  printf("///          ===================================================          ///\n");
+	  printf("///                Developed by  @Pedro_.Guedes- Jan, 2021                ///\n");
+	  printf("///                                                                       ///\n");
 		printf("///                                                                       ///\n");
 		printf("/////////////////////////////////////////////////////////////////////////////\n");
 		printf("///                                                                       ///\n");
@@ -103,7 +103,7 @@ int menuPrincipal(){
 		printf("///           4. Pagamentos                                               ///\n");
 		printf("///           0. Encerra o programa                                       ///\n");
 		printf("///                                                                       ///\n");
-		printf("///           Escolha a opçao desejada: ");
+		printf("///           Escolha a opção desejada: ");
 		scanf("%c", &op);
 		getchar();
 		printf("///                                                                       ///\n");
@@ -177,7 +177,7 @@ void TeladeAviso(void){
 	printf("///          ===================================================          ///\n");
 	printf("///                Developed by  @pedro_.guedes - Jan, 2021               ///\n");
 	printf("///                                                                       ///\n");
-	printf("///                       DADOS NAO ENCONTRADOS                           ///\n");
+	printf("///                       DADOS NÃO ENCONTRADOS                           ///\n");
 	printf("///                                                                       ///\n");
 	printf("/////////////////////////////////////////////////////////////////////////////\n");
 	getchar();

@@ -12,3 +12,9 @@ Saques* TelaSaques(void);
 void cadastrarSaques(void);
 void extratoSaques(void);
 void gravarSaques(Saques* saq);
+
+//Extrato
+Saques* cpfExtrato(char* nom);
+void Extrato(void);
+char* telaBuscaSaq(void);
+void exibirExtrato(Saques* Saques);
