@@ -6,6 +6,7 @@ struct transferencia{
   char contaBancaria[7];
   char valorTranf [11];
 	float preco;
+	char status;
 };
 
 

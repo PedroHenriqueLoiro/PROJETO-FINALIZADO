@@ -15,8 +15,7 @@ void moduloDeposito(){
 		switch (opcao)
 		{
 			case '1':cadastrarDeposito();
-						break;
-		
+						break;		
 			case '2':histDeposito();
 						break;
 		}
@@ -76,7 +75,7 @@ char menuDeposito(void) {
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
 	printf("///                                                                       ///\n");
 	printf("///           1. Cadastrar Deposito                                       ///\n");
-	printf("///           2. Historico de Depositos                                   ///\n");
+	printf("///           2. Buscar por depositos                                     ///\n");
 	printf("///           0. Voltar ao menu anterior                                  ///\n");
 	printf("///                                                                       ///\n");
 	printf("///                                                                       ///\n");
@@ -93,7 +92,6 @@ char menuDeposito(void) {
 //
 Deposito* TelaDeposito(void){
 	Deposito* dpst;
-	int dataValida;
 	float valPre;
 	dpst = (Deposito*) malloc(sizeof(Deposito));
 	limpaTela();

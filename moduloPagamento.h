@@ -7,6 +7,8 @@ struct pagamento {
 	char valorPagamento [11];
 	float preco;
 	float precoConfirmacao;
+	char status;
+	struct pagamento* prox;
 };
 
 //

@@ -66,7 +66,6 @@ int validaNome(char nome[]){
 //
 #include <stdio.h>
 float validaPreco(float pre[]){
-	float preco[1];
 
 	for(int i = 0; i<1;i++){
 		if(pre[i] < 0 || pre[i] == 0){

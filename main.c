@@ -14,6 +14,7 @@
 #include "moduloSaques.h"
 #include "moduloPagamento.h"
 #include "validacao.h"
+#include "moduloRelatorio.h"
 
 //
 /// São algumas assinaturas 
@@ -64,7 +65,10 @@ int main(void) {
 		case '4':moduloPagamento();
 			break;
 
-		case '5':menuSobre();
+    case '5':moduloRelatorios();
+		  break;
+			
+		case '6':menuSobre();
 			break;
 	
 		}
@@ -77,7 +81,7 @@ int main(void) {
 return 0;
 }
 
-int menuPrincipal(){
+int menuPrincipal(void){
 		limpaTela();
 		char op;
 		printf("\n");
@@ -101,6 +105,8 @@ int menuPrincipal(){
 		printf("///           2. Transferencia                                            ///\n");
 		printf("///           3. Saques                                                   ///\n");
 		printf("///           4. Pagamentos                                               ///\n");
+		printf("///           5. Relatorios                                               ///\n");
+    printf("///           6. Menu Sobre                                               ///\n");
 		printf("///           0. Encerra o programa                                       ///\n");
 		printf("///                                                                       ///\n");
 		printf("///           Escolha a opção desejada: ");
@@ -114,6 +120,11 @@ int menuPrincipal(){
 		getchar();
 		return op;
 	}
+
+
+
+
+
 
 
 //
@@ -142,8 +153,10 @@ void menuSobre(void) {
     printf("///        a criacao de conta em um banco.                                   ///\n");
     printf("///                                                                          ///\n");
     printf("////////////////////////////////////////////////////////////////////////////////\n");
+    getchar();
     printf("\n");
 }
+
 
 //
 /// tchauzinho

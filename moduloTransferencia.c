@@ -224,7 +224,7 @@ char* telaBuscaTransf(void){
 	printf("/////////////////////////////////////////////////////////////////////////////\n");
 	printf("///                                                                       ///\n");
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
-	printf("///           = = = = =           Extrato           = = = = =             ///\n");
+	printf("///           = = = = =          Transferencia      = = = = =             ///\n");
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
 	printf("///                                                                       ///\n");
 	printf("///           Informe o nome: ");
@@ -255,7 +255,7 @@ void exibirTranf(Transf* Transf){
 	printf("/////////////////////////////////////////////////////////////////////////////\n");
 	printf("///                                                                       ///\n");
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
-	printf("///          	= = = = = = =   Historico de Transf   = = = = =             ///\n");
+	printf("///          	= = = = = = Buscar por transferencia  = = = = =             ///\n");
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
 	printf("///                                                                       ///\n");
 	printf("///                                                                       ///\n");

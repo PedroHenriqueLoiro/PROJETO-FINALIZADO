@@ -6,6 +6,8 @@ struct deposito {
   char agencia[5];
   char valorDepositado [20];
 	float preco;
+	char status;
+	struct deposito* prox;
 };	
 
 //

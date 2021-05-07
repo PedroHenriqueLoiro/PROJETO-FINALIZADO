@@ -163,7 +163,8 @@ Pagamento* telaPreencherPaga(void){
 	paga->preco = atof(paga->valorPagamento);
   valPre = validaPreco(&paga->preco);
   while (!valPre){
-		printf("/// Valor Depositado: ");
+    printf("/// Valor invalido");
+		printf("/// Valor Pago: ");
 	  scanf("%10[^\n]",paga->valorPagamento);
 	  getchar();
 	  paga->preco = atof(paga->valorPagamento);
@@ -242,7 +243,7 @@ char* telaBuscaPag(void){
 	printf("/////////////////////////////////////////////////////////////////////////////\n");
 	printf("///                                                                       ///\n");
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
-	printf("///           = = = = =       Historico pagamento   = = = = =             ///\n");
+	printf("///           = = = = =       Buscar Pagamento      = = = = =             ///\n");
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
 	printf("///                                                                       ///\n");
 	printf("///           Informe o codigo: ");

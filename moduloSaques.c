@@ -39,16 +39,16 @@ void cadastrarSaques(void){
 
 // historico do saque
 void extratoSaques(void){
-	Saques* struSqst;
+	Saques* saq;
 	char* nom;
 
 	nom = telaBuscaSaq();
 
-	struSqst = cpfExtrato(nom);
+	saq = cpfExtrato(nom);
 
-	exibirExtrato(struSqst);
+	exibirExtrato(saq);
 
-	free(struSqst);
+	free(saq);
 
 }
 
@@ -69,7 +69,7 @@ void extratoSaques(void){
 	}
 
 	while(!feof(fp)){
-		fread(cpf,sizeof(Pagamento),1,fp);
+		fread(cpf,sizeof(Saques),1,fp);
 		if(strcmp(cpf->cpf, nom) == 0){
 			fclose(fp);
 			return cpf;
@@ -104,7 +104,7 @@ char menuSaque(void){
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
 	printf("///                                                                       ///\n");
 	printf("///           1. Realizar Saque                                           ///\n");
-	printf("///           2. Extrato                                                  ///\n");
+	printf("///           2. buscar saques                                            ///\n");
 	printf("///           0. Voltar ao menu anterior                                  ///\n");
 	printf("///                                                                       ///\n");
 	printf("///           Escolha a opção desejada:                                   ///\n");
@@ -214,7 +214,7 @@ char* telaBuscaSaq(void){
 	printf("/////////////////////////////////////////////////////////////////////////////\n");
 	printf("///                                                                       ///\n");
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
-	printf("///           = = = = =           Extrato           = = = = =             ///\n");
+	printf("///           = = = = =           Busca Saques      = = = = =             ///\n");
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
 	printf("///                                                                       ///\n");
 	printf("///           Informe o cpf: ");
@@ -231,7 +231,7 @@ char* telaBuscaSaq(void){
 /// Função responsavel por mostrar o Extrato
 //
 void exibirExtrato(Saques* Saques){
-  limpaTela();
+	limpaTela();
   printf("\n");
 	printf("/////////////////////////////////////////////////////////////////////////////\n");
 	printf("///                                                                       ///\n");
@@ -245,12 +245,11 @@ void exibirExtrato(Saques* Saques){
 	printf("/////////////////////////////////////////////////////////////////////////////\n");
 	printf("///                                                                       ///\n");
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
-	printf("///          	= = = = = = =        Extrato          = = = = =             ///\n");
+	printf("///           = = = = = = = =       Extrato   = = = = = = = =             ///\n");
 	printf("///           = = = = = = = = = = = = = = = = = = = = = = = =             ///\n");
 	printf("///                                                                       ///\n");
-	printf("///                                                                       ///\n");
-  printf("/// O saque Foi feito no cpf: %s                                          ///\n",Saques->cpf);
-  printf("/// No valor de: R$%s                                                      ///\n",Saques->valor);
+ 	printf("/// O saque Foi feito no cpf: %s                                          \n",Saques->cpf);
+  printf("/// No valor de: R$%0.2f                                                  \n",Saques->preco);
 	printf("///                                                                       ///\n");
 	printf("///                                                                       ///\n");
 	printf("/////////////////////////////////////////////////////////////////////////////\n");

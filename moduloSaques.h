@@ -3,6 +3,8 @@ struct saques {
  char cpf[15]; 
  char valor [11]; 
  float preco;
+ char status;
+ struct saques* prox;
 };
 
 
